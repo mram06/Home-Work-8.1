@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------*/
+@font-face {
+  font-family: "Basis";
+  src: url("../fonts/BasisGrotesquePro-Regular.woff2") format("woff2"), url("../fonts/BasisGrotesquePro-Regular.woff") format("woff"), url("../fonts/BasisGrotesquePro-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Basis";
+  src: url("../fonts/BasisGrotesquePro-Bold.woff2") format("woff2"), url("../fonts/BasisGrotesquePro-Bold.woff") format("woff"), url("../fonts/BasisGrotesquePro-Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Basis";
+  src: url("../fonts/BasisGrotesquePro-Medium.woff2") format("woff2"), url("../fonts/BasisGrotesquePro-Medium.woff") format("woff"), url("../fonts/BasisGrotesquePro-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Basis", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.text {
+  opacity: 0.6;
+  font-family: "Basis";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.header__body {
+  display: flex;
+  position: relative;
+  height: 70px;
+  padding: 0 60px 0 50px;
+}
+.header__logo {
+  display: flex;
+  position: absolute;
+  top: 25px;
+}
+.header__logo p {
+  margin: 0 0 0 5px;
+  display: block;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.35;
+}
+.header__menu {
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin: 0 0 0 280px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+}
+.header__menu .black {
+  display: none;
+}
+.header__menu:last-child {
+  color: #0536FC;
+}
+.header__menu a {
+  color: #000000;
+}
+.header__menu a:last-child {
+  display: none;
+}
+.header__menu img {
+  width: 10px;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+}
+.header__menu li:hover {
+  color: #0536FC;
+}
+.header__menu a:hover img {
+  transition: transform 0.3s ease-out;
+  transform: rotate(180deg);
+}
+
+.partner__body {
+  padding: 116px 0 150px 14%;
+  position: relative;
+}
+.partner__body a {
+  position: absolute;
+  right: 35px;
+  bottom: 157px;
+}
+.partner__body a img {
+  display: block;
+}
+.partner__body a:hover {
+  transition: transform 0.3s linear 0.2s;
+  transform: rotate(180deg);
+}
+.partner__subtitle {
+  color: #0536FC;
+}
+.partner__title {
+  color: #000000;
+  font-size: 57px;
+  margin: 30px 0 70px;
+  line-height: 59px;
+}
+.buttons__body {
+  border: 1px solid #D9D9D9;
+}
+.buttons input {
+  display: none;
+}
+.buttons__row {
+  display: flex;
+}
+.buttons__row label:first-child {
+  border-right: 1px solid #D9D9D9;
+}
+.buttons label {
+  font-family: "Basis";
+  display: block;
+  width: 50%;
+  padding: 32px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0536FC;
+}
+.buttons input:checked + label {
+  background: #0536FC;
+  color: #FFFFFF;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+  .partner__img {
+    display: none;
+  }
+  .partner__body {
+    height: 700px;
+  }
+  .partner__menu a {
+    display: none;
+  }
+  .partner__menu a:last-child {
+    display: block;
+  }
+  .header__menu {
+    margin: 0;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .title {
+    margin: 30px 0;
+  }
+  .partner__text {
+    margin: 0 0 50px 0;
+  }
+  .header__body {
+    padding: 0 20px;
+  }
+  .partner__info {
+    height: auto;
+    padding: 30px 20px 0 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
